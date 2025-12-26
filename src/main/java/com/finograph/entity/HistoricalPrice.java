@@ -45,5 +45,6 @@ public class HistoricalPrice {
     private Long volume;
 
 
-
+    public void setOpenPrice(BigDecimal bigDecimal) {
+    }
 }

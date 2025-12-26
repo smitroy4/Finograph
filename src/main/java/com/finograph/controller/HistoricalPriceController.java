@@ -18,6 +18,7 @@ public class HistoricalPriceController {
     @Autowired
     private StockRepository stockRepository;
 
+    // READ API (used by frontend charts)
     @GetMapping("/{symbol}")
     public List<HistoricalPrice> getPrices(@PathVariable String symbol) {
         Stock stock = stockRepository.findBySymbol(symbol)
@@ -26,6 +27,7 @@ public class HistoricalPriceController {
         return historicalPriceService.getPricesForStock(stock);
     }
 
+    // TEMP WRITE API (for learning & testing only)
     @PostMapping("/{symbol}")
     public HistoricalPrice addPrice(
             @PathVariable String symbol,

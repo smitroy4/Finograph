@@ -77,6 +77,18 @@
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.google.ai.client</groupId>-->
+<!--            <artifactId>generativeai</artifactId>-->
+<!--            <version>0.3.0</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>
